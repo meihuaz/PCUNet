@@ -1,0 +1,38 @@
+batch_size: 1
+workers: 5
+nepoch: 100
+model_name: AtlasNet
+load_model: "/root/shenzhen_1_1/zmh/point_cloud_jsen/PCUNet/atlasnet_log/AtlasNet_cd_debug_2022-02-15T22:03:16/best_cd_t_network.pth"
+#  "/root/shenzhen/zmh/point_cloud/PCUNet/atlasnet_log/AtlasNet_cd_debug_2021-10-02T03:58:41/best_cd_t_network.pth"
+#  "/root/shenzhen/zmh/point_cloud/PCUNet/atlasnet_log/AtlasNet_cd_debug_2021-10-02T03:58:41/checkpoint.tar"
+#  "/root/shenzhen/zmh/point_cloud/PCUNet/atlasnet_log/AtlasNet_cd_debug_2021-10-02T03:58:41/checkpoint.tar"
+#  "/root/shenzhen/zmh/point_cloud/PCUNet/atlasnet_log/AtlasNet_cd_debug_2021-10-02T03:58:41/best_cd_t_network.pth"
+#  "/root/shenzhen/zmh/point_cloud/PCUNet/atlasnet_log/AtlasNet_cd_debug_2021-09-28T12:09:36/best_cd_t_network.pth"
+start_epoch: 0
+num_points: 2048
+work_dir: atlasnet_log/
+flag: debug
+loss: cd
+manual_seed: 1
+use_mean_feature: False
+step_interval_to_print: 500
+epoch_interval_to_save: 1
+epoch_interval_to_val: 1
+varying_constant: null
+varying_constant_epochs: null
+
+lr: 0.001
+lr_decay: True
+lr_decay_interval: null
+lr_decay_rate: null
+lr_step_decay_epochs: 20,40
+lr_step_decay_rates: 0.1,0.1
+lr_clip: null
+optimizer: Adam
+weight_decay: 0
+betas: 0.9, 0.999
+
+n_primitives: 16
+
+# test
+save_vis: False
