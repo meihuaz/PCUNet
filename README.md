@@ -27,11 +27,11 @@ Run lmdb_serializer.py to preprocess the dataset.
 
 #### 3) Training
 1. Run `python train.py` to train the neural network using PCN dataset.
-2. Run `python train_kitti.py` to train the neural network using Car category. 
+ 
 
 #### 4) Testing
 1. Run `python test.py` to test the neural network using PCN dataset.
-2. Run `python test_kitti.py` to test the neural network using kitti dataset. 
+
 
 
 
